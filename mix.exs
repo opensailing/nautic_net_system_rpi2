@@ -42,7 +42,8 @@ defmodule NauticNetSystemRpi2.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "#{@github_organization}/#{@app}"}
+        {:github_releases, "#{@github_organization}/#{@app}"},
+        {:prefix, "_artifacts/"},
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,

@@ -20,3 +20,6 @@ erl_crash.dump
 /build.log
 /archive.log
 /.nerves
+
+# Put system artifact files here
+/_artifacts
