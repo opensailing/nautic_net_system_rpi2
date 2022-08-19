@@ -23,3 +23,5 @@ erl_crash.dump
 
 # Put system artifact files here
 /_artifacts
+
+/.envrc
