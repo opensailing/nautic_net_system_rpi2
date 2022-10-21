@@ -36,7 +36,15 @@ mix compile
 
 Note that you must recompile when making ANY changes to this repo! Even just this README.
 
-Now, back in the `nautic_net_device` app, when running `mix deps.get` it should successfully find the local system artifact:
+Now, back in the `nautic_net_device` app, make sure the dep is pointing to the local folder, instead of the web:
+
+```
+# mix.exs
+{:nautic_net_system_rpi2,
+  path: "../../../nautic_net_system_rpi2", runtime: false, targets: :nautic_net_rpi2},
+```
+
+When running `mix deps.get` it should successfully find the local system artifact:
 
 ```
 Checking for prebuilt Nerves artifacts...
